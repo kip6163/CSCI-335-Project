@@ -1,0 +1,7 @@
+Python 3.9
+
+pip install seaborn
+pip install scikit-learn
+pip install jupyterlab
+pip install notebook
+pip install tensorflow
