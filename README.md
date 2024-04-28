@@ -1,3 +1,12 @@
+## CS335 quick start
+- Download the repository
+- Use Python 3.8.6 (If using conda, version 3.8.6 can be found on the conda-forge channel)
+- Run ```pip install -r requirements.txt```
+- Download the [AfroMNIST](https://github.com/Daniel-Wu/AfroMNIST) dataset (recommend downloading from [Kaggle](https://www.kaggle.com/datasets/danjwu/afromnist) as downloading the repository from the github website will produce unreadable data files)
+- Place the extracted AfroMNIST-master folder in the /Data/Offline directory
+- Run ```jupyter notebook HCR-Net-Afro.ipynb```
+
+
 
 ## Implementation for HCR-Net:
 [1] Chauhan, V.K., Singh, S. & Sharma, A. HCR-Net: a deep learning based script independent handwritten character recognition network. Multimed Tools Appl (2024). [paper](https://doi.org/10.1007/s11042-024-18655-5), [preprint](https://arxiv.org/abs/2108.06663)
@@ -17,6 +26,8 @@
 ./                                  - This is top directory.
 ./README.md                         - This is readme file.
 ./HCR-Net.ipynb                     - This Jupyter Notebook contains implementation of HCR-Net [1]. By default, it runs with UCI Devanagari Numeral dataset, but you need to change this to run with your script.
+./HCR-Net-Afro.ipynb                - This Jupyter Notebook contains HCR-Net modified to work with the AfroMNIST dataset (but can easily be modified to run any MNIST like dataset)
+./TimeHist.py                       - This python file implements a custom callback to record the time each epoch took to complete
 ./HCR-Net-Augmentation.ipynb        - This Jupyter Notebook runs HCR-Net with image-augmentation.
 ./Study-miss-classification.ipynb   - This Jupyter Notebook is used study mis-classification of HCR-Net.
 ./learning_rate.py                  - This python file implements custom learning rates used by HCR-Net.
