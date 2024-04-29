@@ -5,7 +5,15 @@
 - Download the [AfroMNIST](https://github.com/Daniel-Wu/AfroMNIST) dataset (recommend downloading from [Kaggle](https://www.kaggle.com/datasets/danjwu/afromnist) as downloading the repository from the github website will produce unreadable data files)
 - Place the extracted AfroMNIST-master folder in the /Data/Offline directory
 - Run ```jupyter notebook HCR-Net-Afro.ipynb```
+- To change what language HCR-Net-Afro is trained on, alter the ```afro_language``` variable in the notebook
 
+Most of the files from HCR-Net have not been changed
+### List of changed/created files
+- HCR-Net.ipynb 
+- HCR-Net-Afro.ipynb
+- README.md
+- TimeHist.py
+- requirements.txt
 
 
 ## Implementation for HCR-Net:
@@ -25,6 +33,7 @@
 <pre>
 ./                                  - This is top directory.
 ./README.md                         - This is readme file.
+./requirements.txt                  - This is the requirements.txt for pip
 ./HCR-Net.ipynb                     - This Jupyter Notebook contains implementation of HCR-Net [1]. By default, it runs with UCI Devanagari Numeral dataset, but you need to change this to run with your script.
 ./HCR-Net-Afro.ipynb                - This Jupyter Notebook contains HCR-Net modified to work with the AfroMNIST dataset (but can easily be modified to run any MNIST like dataset)
 ./TimeHist.py                       - This python file implements a custom callback to record the time each epoch took to complete
